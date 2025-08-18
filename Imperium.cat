@@ -1947,13 +1947,10 @@ Starhawks: 20cm</characteristic>
           </constraints>
           <selectionEntries>
             <selectionEntry id="574a-6346-ad91-19a1" name="Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d84-a67e-108f-18a5" type="max"/>
-              </constraints>
               <profiles>
                 <profile id="ff64-2c94-69ea-8767" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
@@ -1966,19 +1963,23 @@ Starhawks: 20cm</characteristic>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="8888-e64f-6354-02c5" name="Prow Nova Cannon" hidden="false" collective="false" import="true" targetId="932e-6f5b-65cc-38e7" type="selectionEntry"/>
-            <entryLink id="38a9-3866-3b54-e946" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry">
+            <selectionEntry type="upgrade" import="true" name="Prow Nova Cannon" hidden="false" id="5e86-0d05-3814-30bc">
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
               <profiles>
-                <profile id="d5c7-d999-59db-ed5c" name="Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                <profile name="Prow Nova Cannon" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="ec61-58de-be69-91b5">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="38a9-3866-3b54-e946" name="Power Ram" hidden="false" collective="false" import="true" targetId="9818-379a-5217-d9e9" type="selectionEntry">
               <infoLinks>
                 <infoLink id="d434-9dfa-df10-4aad" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
               </infoLinks>
@@ -3299,9 +3300,6 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
       </costs>
     </selectionEntry>
     <selectionEntry id="9818-379a-5217-d9e9" name="Power Ram" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="966b-ec63-e18b-fdd9" type="max"/>
-      </constraints>
       <profiles>
         <profile id="34ae-8001-491f-b1ee" name="Power Ram" publicationId="11f0-17d1-e4d2-1018" page="115" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -4911,7 +4909,7 @@ Starhawks: 20cm</characteristic>
   <sharedProfiles>
     <profile id="af91-33ff-94d6-44f4" name="Prow Nova Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
       <characteristics>
-        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150cm</characteristic>
+        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30-150 cm</characteristic>
         <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
         <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
       </characteristics>
