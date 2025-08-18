@@ -20,6 +20,8 @@ Bug report : https://tinyurl.com/gothicbug</readme>
       <comment>Note: The main sources for gothic are to be, BFG Rulebook, BFG Rulebook - Armada, and the 2010 compendium.
 The additional ships compendium cites it&apos;s sources so site those instead of the additioanl ships document.</comment>
     </publication>
+    <publication name="BFG Remastered Official Fleets" id="f372-e7fc-f6fe-5a46" hidden="false"/>
+    <publication name="BFG Remastered Official Rulebook" id="af09-2538-f302-9cc8" hidden="false"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0" hidden="false"/>
@@ -149,7 +151,7 @@ also 40k does not put unit&apos;s here. (weapons systems in gothic dont work lik
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Apocalypse class battleship" hidden="false" id="1b4d-d953-37ef-a2a2">
+    <selectionEntry type="model" import="true" name="Apocalypse class battleship" hidden="false" id="1b4d-d953-37ef-a2a2" publicationId="f372-e7fc-f6fe-5a46" page="50">
       <categoryLinks>
         <categoryLink targetId="4361706974616c20536869707323232344415441232323" id="456d-380c-7659-5e9d" primary="true" name="Battleship"/>
       </categoryLinks>
@@ -205,6 +207,10 @@ also 40k does not put unit&apos;s here. (weapons systems in gothic dont work lik
       <costs>
         <cost name="pts" typeId="points" value="365"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Power Ram" hidden="false" id="8c48-b543-4ba8-d1f0" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry"/>
+        <entryLink import="true" name="Leadership" hidden="false" id="1882-c02a-6133-d252" type="selectionEntryGroup" targetId="72b9-2803-264f-57f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Old Entries" hidden="false" id="cdee-3fdd-0538-2c32">
       <selectionEntries>
@@ -2712,62 +2718,6 @@ Starhawks: 20 cm</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdef-4794-07f9-b7bc"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Apocalypse Class Battleship" hidden="false" id="b32a-699e-b772-f9fe" publicationId="1bc8-5968-21c3-0f27" page="12" collective="false">
-      <comment>blah</comment>
-      <profiles>
-        <profile name="Apocalypse Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0b4a-9602-49ea-1cfe" publicationId="1bc8-5968-21c3-0f27" page="12">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">15cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Port Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="d50d-ebc6-a69a-d51f">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Starboard Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="ce9e-0711-90b4-0715">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Dorsal Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="1320-b92e-89a9-9ead">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Special Lock On" typeId="5a49-6569-78e9-a35c" typeName="Special Rule" hidden="false" id="dd84-25ce-abf6-4dc8" publicationId="1bc8-5968-21c3-0f27" page="12">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">If the Apocalypse is given Lock On special orders, it may increase the range of its lances to 60cm for that Shooting phase only. However, if this option is used the Apocalypse will suffer a Thrusters critical hit as soon if the lances are fired further than 45 cm. This does not cause hull damage, but the damage can be cummulative and must be repaired normally. Pg 19 2010 FAQ</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="May not use the &quot;come to new heading&quot; special order" id="075c-befc-e36d-ef2d" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-        <infoLink name="Prow Nova Cannon" id="ce44-6a56-b06a-d966" hidden="false" targetId="cc33-eb63-0af9-f75b" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink name="Battleship" hidden="false" id="ffe7-ae0b-7a84-b9fe" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Power Ram" hidden="false" id="8c48-b543-4ba8-d1f0" collective="false" targetId="da1b-4ff6-4924-3521" type="selectionEntry"/>
-        <entryLink import="true" name="Leadership" hidden="false" id="82e9-afcd-d94d-5e26" collective="false" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="365"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Armageddon Class Battlecruiser" hidden="true" id="78d4-aec1-2208-e9e2" publicationId="b161-6b4c-e770-9ab2" page="17" collective="false">
       <comment>2010 FAQ pg 19 changed points to 235</comment>
       <modifiers>
@@ -2796,13 +2746,6 @@ Starhawks: 20 cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="78d4-aec1-2208-e9e2" childId="fe62-c45b-8321-2c79" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Port Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="9f9a-e07f-b2d7-afc3">
           <characteristics>
@@ -3034,13 +2977,6 @@ Starhawks: 20 cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="5085-985b-3153-bca2" childId="fe62-c45b-8321-2c79" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Dorsal Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="adcc-9a9b-d0d1-7a50">
           <characteristics>
@@ -3486,13 +3422,6 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="308c-e39b-7cb6-5824" childId="fe62-c45b-8321-2c79" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Port Main Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="d0c6-b571-ee53-7a70">
           <characteristics>
@@ -3903,13 +3832,6 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/ 5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="4bcd-0e1c-a9fb-9048" childId="fe62-c45b-8321-2c79" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Retribution Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="33d7-7b4d-a70c-9e98">
           <characteristics>
@@ -4036,13 +3958,6 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="0481-f103-e102-1a11" childId="fe62-c45b-8321-2c79" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Port Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="2d38-af3f-f280-bf0a">
           <characteristics>
@@ -4108,13 +4023,6 @@ Starhawks: 20cm</characteristic>
             <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
             <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="5.475727265747323e+33">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="57a1-2e93-6fa3-7846" childId="fe62-c45b-8321-2c79" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Port lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="bd70-f230-7382-8195">
           <characteristics>
