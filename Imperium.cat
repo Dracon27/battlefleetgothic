@@ -2969,22 +2969,6 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="d02d-6a3f-c406-06bb" name="Armageddon Class Battlecruiser" hidden="true" collective="false" import="true" targetId="35af-bdab-91ca-40fb" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </entryLink>
     <entryLink id="e6a1-97fd-6e5b-7ab9" name="Avenger Class Grand Cruiser" hidden="true" collective="false" import="true" targetId="1fda-2b76-b64f-e8d3" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -3248,6 +3232,26 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Armageddon Class Battlecruiser" hidden="false" id="50f2-73c4-8cf3-48dc" type="selectionEntry" targetId="78d4-aec1-2208-e9e2">
+      <entryLinks>
+        <entryLink import="true" name="Bakka Turret" hidden="false" id="88f7-4d2d-2b2d-57d9" type="selectionEntry" targetId="8025-e5ea-9b7b-7f59"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="59ab-5c9e-2fbe-26a2" name="Mechanicus Fleet Rules" page="0" hidden="true">
@@ -3369,21 +3373,6 @@ Mechanicus fleet commanders gain refits as they increase in renown (see the AM p
     </selectionEntry>
     <selectionEntry id="35af-bdab-91ca-40fb" name="Armageddon Class Battlecruiser" publicationId="b161-6b4c-e770-9ab2" page="17" hidden="true" collective="false" import="true" type="unit">
       <comment>2010 FAQ pg 19 changed points to 235</comment>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb02-283b-cb5e-e4ea" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a3-f4ab-d475-1a63" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e874-e62b-1c36-7aec" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c52d-5b11-b7cd-f654" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="d78a-164a-843b-659c" name="Armageddon Profile" publicationId="1bc8-5968-21c3-0f27" page="17" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>

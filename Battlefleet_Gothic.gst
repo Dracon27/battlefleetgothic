@@ -2720,33 +2720,7 @@ Starhawks: 20 cm</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Armageddon Class Battlecruiser" hidden="true" id="78d4-aec1-2208-e9e2" publicationId="b161-6b4c-e770-9ab2" page="17" collective="false">
       <comment>2010 FAQ pg 19 changed points to 235</comment>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="eb02-283b-cb5e-e4ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
-        <profile name="Armageddon Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="7706-cc39-bc4f-1a7b" publicationId="1bc8-5968-21c3-0f27" page="17">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Port Lance Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="9f9a-e07f-b2d7-afc3">
           <characteristics>
             <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
@@ -2781,6 +2755,24 @@ Starhawks: 20 cm</characteristic>
             <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
             <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Armageddon Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="7706-cc39-bc4f-1a7b" publicationId="1bc8-5968-21c3-0f27" page="17">
+          <characteristics>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
+            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Front/5+</characteristic>
+            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="5.475727265747323e+33">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="50f2-73c4-8cf3-48dc" childId="8025-e5ea-9b7b-7f59" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
