@@ -3500,7 +3500,7 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
         <cost name="pts" typeId="points" value="100"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7167-8565-9b51-7940" name="Slaverer" publicationId="5766-7751-d146-0800" page="" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="7167-8565-9b51-7940" name="Slaverer" publicationId="5766-7751-d146-0800" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4272,6 +4272,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
