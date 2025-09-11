@@ -3087,6 +3087,9 @@ Starhawks: 20cm</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="230"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
