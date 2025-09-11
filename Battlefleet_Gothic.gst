@@ -1038,19 +1038,6 @@ Starhawks: 20cm</characteristic>
       <costs>
         <cost name="pts" typeId="points" value="220"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Ram" hidden="false" id="da1b-4ff6-4924-3521" collective="false">
       <constraints>
@@ -1504,15 +1491,9 @@ Starhawks: 20 cm</characteristic>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set-primary" value="b041-ef69-0039-d535" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -1991,15 +1972,9 @@ Starhawks: 20cm</characteristic>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set-primary" value="b041-ef69-0039-d535" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -2242,15 +2217,9 @@ Starhawks: 20cm</characteristic>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set-primary" value="b041-ef69-0039-d535" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" includeChildSelections="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <profiles>
