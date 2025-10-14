@@ -113,7 +113,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
     <categoryEntry name="Escort Reserves" id="1a51-6599-e353-c949" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="7529-da04-0225-31de" name="Unbound" publicationId="137d-dbad-5653-19f2" hidden="false">
+    <forceEntry id="7529-da04-0225-31de" name="Unbound" publicationId="137d-dbad-5653-19f2" hidden="true">
       <categoryLinks>
         <categoryLink id="9185-a0b3-9892-66a6" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
         <categoryLink id="a7b3-1f91-5493-87fb" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
@@ -3107,6 +3107,17 @@ Starhawks: 20cm</characteristic>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8575-a9f4-8b1b-0265" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
