@@ -66,19 +66,6 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="ec1b-17c7-71cd-970c" name="All Chaos Vessels (Unofficial)" hidden="true">
-      <categoryLinks>
-        <categoryLink id="c265-7f22-5ad3-507b" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="81d7-adf4-d3d1-1ec6" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
-        <categoryLink id="6fdc-9d6e-86f6-0c2d" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="281b-a377-37c7-c514" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="f028-7555-dc01-2f28" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-        <categoryLink id="1cb9-d530-772f-2007" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false"/>
-        <categoryLink id="de9d-39c0-49e0-cc24" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="a4a7-0132-5071-c9fc" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="49a8-2507-d2fe-1a9d" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
     <forceEntry id="20b9-130a-82d9-6696" name="Bezerker Fleet of Khorne" publicationId="5766-7751-d146-0800" page="120" hidden="false">
       <profiles>
         <profile id="6bfd-9efc-d7cd-11b4" name="Bezerker Fleet of Khorne" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
@@ -126,73 +113,6 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62f5-abaa-0a25-5937" type="min"/>
             <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca97-1bbe-f192-2ee4" type="max"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry id="43dd-64be-df08-1c4e" name="Chaos Space Marine Fleet" hidden="false">
-      <categoryLinks>
-        <categoryLink id="63ae-4c6e-bca3-3d08" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
-        <categoryLink id="fe4a-4796-4cb6-230a" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false">
-          <modifiers>
-            <modifier type="increment" field="1b0a-26bf-dbcd-a027" value="1">
-              <conditions>
-                <condition field="points" scope="parent" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="1b0a-26bf-dbcd-a027" value="1">
-              <conditions>
-                <condition field="points" scope="parent" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="1b0a-26bf-dbcd-a027" value="1">
-              <conditions>
-                <condition field="points" scope="parent" value="3000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b0a-26bf-dbcd-a027" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="16de-e7d6-66e4-2954" name="Escort" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
-        <categoryLink id="6359-d7dc-a330-4e7d" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
-        <categoryLink id="04c4-a65e-00a0-8d74" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="808c-c9d6-90c4-8390" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="a0a2-63da-c5c1-5f57" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="false"/>
-        <categoryLink id="12ea-eef8-164b-1554" name="Orbital Defence" hidden="false" targetId="90ac-0bee-0c90-be27" primary="false"/>
-        <categoryLink id="26db-818e-4aac-9f99" name="Ordnance" hidden="false" targetId="e70d-1bf2-7ea2-276a" primary="false"/>
-        <categoryLink id="b1d2-7e46-68c2-dfeb" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false">
-          <modifiers>
-            <modifier type="increment" field="3b89-9688-23c8-08b9" value="3">
-              <repeats>
-                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="46e2-c9eb-27e7-172a" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-c9eb-27e7-172a" type="instanceOf"/>
-                    <condition field="selections" scope="4361706974616c20536869707323232344415441232323" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4361706974616c20536869707323232344415441232323" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="3b89-9688-23c8-08b9" value="2">
-              <repeats>
-                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="cf79-82ee-ebe9-7ea3" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf79-82ee-ebe9-7ea3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b89-9688-23c8-08b9" type="min"/>
-            <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6fa-7154-1e75-a19c" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -417,10 +337,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -475,9 +392,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
@@ -551,8 +465,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -636,25 +548,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </costs>
     </selectionEntry>
     <selectionEntry id="cee4610f-cd87-4d49-ace9-b557fe114414" name="Devastation Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="238c-2d94-8fe0-2060" name="Devastation Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -717,25 +610,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </costs>
     </selectionEntry>
     <selectionEntry id="15c2793a-8248-421d-b14b-b90d004dceb8" name="Murder Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="123" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="a01e-9623-9498-a0dc" name="Murder Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -852,10 +726,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -935,25 +806,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
       </costs>
     </selectionEntry>
     <selectionEntry id="b53b5651-21f5-4ebb-8a93-3f2940965bc7" name="Slaughter Class Cruiser" publicationId="11f0-17d1-e4d2-1018" page="124" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="8abe-caf4-e40b-596e" name="Slaughter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1018,124 +870,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="165"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="770a-fd8c-3d9f-dcb9" name="Desecrator Class Battleship" publicationId="9670-79b6-b335-ed60" page="40" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" field="5850-0d5e-5147-a297" value="1">
-          <conditions>
-            <condition field="points" scope="force" value="10000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="5850-0d5e-5147-a297" value="1">
-          <conditions>
-            <condition field="points" scope="force" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5850-0d5e-5147-a297" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="07b4-895a-1308-1259" name="Desecrator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e67e-5e5b-b29e-dbc8" name="Desecrator Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="41ee-2893-2da1-76f8" name="Desecrator Port Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ad4f-1df9-0173-64c6" name="Desecrator Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="04de-40ac-7926-61cb" name="Desecrator Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7496-4345-bde9-4f5c" name="Desecrator Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="366f-4237-e5fc-79d2" name="Desecrator Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">9</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="98f2-90c7-d4bc-a98a" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-        <infoLink id="0be5-6f45-086b-03b3" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="9696-ee78-0ddb-1c29" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="3384-ce01-ffef-9c5c" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="be45-b764-8a03-3d27" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="4aea-883b-cce3-2af6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="350"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="7a98-2d2a-b75f-b6c0" name="Hecate Class Heavy Cruiser" publicationId="5766-7751-d146-0800" page="115" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="6762-d2c0-5dc6-5133" name="Hecate Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1205,234 +940,13 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="230"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e7b-9b19-fae9-d23d" name="Hellfire Class Heavy Cruiser" publicationId="9670-79b6-b335-ed60" page="44" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="6b07-d14d-80ad-0ca9" name="Hellfire Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a418-3602-5575-3559" name="Hellfire Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="25e2-c9ff-337b-3ac8" name="Hellfire Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e61b-b398-9288-c0f5" name="Hellfire Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1160-5873-35c0-2295" name="Hellfire Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f451-9573-68e6-db6d" name="Hellfire Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45m</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="99b5-1ae4-eb44-f746" name="Hellfire Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bea4-5050-deee-6502" name="Overload Reactors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">When using the special order &apos;All Ahead Full&apos; or &apos;Burn Retros&apos; the ship may not use any of its lance batteries. This is because the ship needs to re&apos;channel the energy used to power these weapons back to the engines and thrusters.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="c860-dc62-45c9-d60f" name="Heavy Cruiser" hidden="false" targetId="cf79-82ee-ebe9-7ea3" primary="true"/>
-        <categoryLink id="0ce0-e71b-81a8-b0f0" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="false"/>
-        <categoryLink id="cee2-3646-976d-62ed" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="770e-2f0d-e936-7a58" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="b3ab-bad0-cd87-d7e7" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="285"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="79b1-470d-160a-4efa" name="Emasculator Class Cruiser" publicationId="137d-dbad-5653-19f2" page="45" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="68f4-3440-fc6d-ac59" name="Emasculator Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2c5c-1a42-6096-f85c" name="Emasculator Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="64eb-1b25-200b-1d75" name="Emasculator Starboard WeaponsBattery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2278-2018-c209-7e91" name="Emasculator Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a9d2-1598-2bb0-f090" name="Emasculator Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7615-2415-15b9-30f5" name="Emasculator Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="1e33-bc4b-ccf9-0ad8" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-        <categoryLink id="cd0a-3517-625e-4b96" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="a9a9-73eb-4e57-b1f8" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="ed63-a819-5e53-fd07" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="185"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e832-733a-443f-9fec" name="Apostate Class Heavy Raider" publicationId="137d-dbad-5653-19f2" page="45" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="23b0-5733-566b-419b" name="Apostate Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="977e-e6dc-cb5c-c534" name="Apostatel Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e06a-5bbf-cd57-873a" name="Apostate Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3b8c-6850-042d-460b" name="Apostate Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="a6fa-d46d-928b-b928" hidden="false" targetId="4573636f72747323232344415441232323" primary="true" name="Escort"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="a703-8008-efe7-04cf" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="50"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="3938-6c09-fc0a-bfee" name="Scion Of Prospero" publicationId="5766-7751-d146-0800" page="106" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1541,8 +1055,6 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -1830,8 +1342,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -1957,9 +1467,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -2179,25 +1686,6 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
       </costs>
     </selectionEntry>
     <selectionEntry id="f83f-30ea-8b93-baef" name="Inferno Class Cruiser" publicationId="5766-7751-d146-0800" page="116" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="2af5-9281-4246-07a6" name="Inferno Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -2264,8 +1752,6 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
               </conditions>
@@ -2319,10 +1805,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2437,830 +1920,6 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="650"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7824-e934-0b39-6824" name="Ahriman Of The Thousand Sons" publicationId="31db-354b-7439-4995" page="31" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="c772-4b92-0a6e-24e5" value="0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19fa9a3b-ce7a-4a39-8137-b9755c7f57eb" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c772-4b92-0a6e-24e5" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="0c7b-000c-c43a-58e8" name="Ahriman Of The Thousand Sons" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">10</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1 per turn</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-        <profile id="ab84-093f-893f-8505" name="&quot;You have failed me for the last time...&quot;" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Ahriman uses the same rule as Abaddon.
-
-Abaddon the Despoiler does not tolerate failure, as many of his followers have discovered to their cost. If Abaddon’s re-roll is used for a Command check or Leadership test on another ship or squadron and the test is failed a second time, he will become angry – very, very angry! In the Chaos Shooting phase Abaddon will direct at least half the available firepower and lance strength of the ship he is commanding against the weaklings who have failed him (assuming the worthless scum are within range and fire arc). Resolve the attack as normal, just as if Abaddon’s vessel were an enemy.
-
-The victims of his wrath (assuming they survive) will be suitably chastised and gain a +1 Leadership increase for the remainder of the game. The Leadership bonus will only take effect once (after that the crews are working as hard as they can!). If the object of Abaddon’s wrath is not in range and/or fire arc he will leave them to their fate – Abaddon’s re-rolls may no longer be used on it. This means that no further Commander re-rolls may be used on the ship or squadron unless it is carrying its own Chaos Lord with a Mark of Tzeentch.
-
-Should this dreadful failure occur on Abaddon’s own ship, it will lose one Damage Point as the Black Legion massacre those who failed him. No Leadership increase is gained.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fedd-4547-f4fe-e0d4" name="Limitations" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Please note that Ahriman is an unofficial addition to the BFG Game, he may be used with your opponent&apos;s permission in games other than the Cerberus War scenário. He must always be the chief Warmaster of your fleet and placed aboard its most expensive vessel.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="71ad-08e1-fc56-1504" name="Blessing of Tzeench" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All enemy vessels firing at his ship suffer a right column shift on the gunnery table.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="596d-b642-dc6b-6a30" name="Daemonic Horde" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Once per game you may unleash a horde of Tzeenchian deamons against your foes. Roll a D6 and then roll that many dice to hit vs. any one enemy ship&apos;s lowest armour value. The Horde has unlimited range and does not require Line of Sight but Shields do not count against any hits caused. Check for Critical hits as normal. The Horde do not get to re-roll their attacks due to Lock On special orders.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9dcd-60ae-dab6-12d7" name="Ward of Chaos" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">All enemy ships within 15cm of his own count as having one Blast Marker on their base.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="c275-96d0-d903-49e9" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="200"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="cba6-94f6-0aaa-cf54" name="Favoured Concubine" publicationId="b6b0-a261-40b3-6563" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecfc-b6d2-a3d4-41c9" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="b123-f0bd-c211-72b7" name="Favoured Concubine Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9b21-e2ba-a6bf-9760" name="Favoured Concubine Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2659-b5ba-8832-9f6b" name="Favoured Concubine Port Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a4ba-41d4-ce16-1afe" name="Favoured Concubine Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4 squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="68cc-7155-2245-9b6e" name="Favoured Concubine Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b147-fdc5-b417-9241" name="Favoured Concubine Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1d36-812e-6776-d90f" name="Favoured Concubine Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4982-9598-ddb2-2d8f" name="Warmistress Erzsebet" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">9</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-        <profile id="6f0a-bd33-50d7-a614" name="Slavetaker" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Any Hit &amp; Run attack from the FAVOURED CONCUBINE&apos;S Dreadclaw Assault Boats receive a +1 (meaning they will succeed automatically), but may forgo rolling on the Hit &amp; Run Critical Hit Table in return for +10 Victory points. This reflects the overwhelming desire of the followers of Slaanesh to take captives, even when to do so may be tactically foolish.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="18fe-9025-d848-2f8d" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-        <infoLink id="963d-33b8-4e01-6963" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f241-1194-c0f0-e756" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="330d-2edb-645c-f8d1" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="4208-7de4-4892-5669">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf23-c756-c4ce-01e1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5767-9cd9-b485-b45f" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="4208-7de4-4892-5669" name="Normal" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e75-1cdd-c7a3-da68" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="9341-794c-062e-2974" name="Chaos Space Marine crew" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a524-8ffb-d4ef-9b06" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="cbab-3760-73e8-aced" name="Chaos Space Marine Crew" hidden="false">
-                      <description>Any capital ship can be designated as having a Chaos Space Marine crew at the points cost indicated in the army list. The ship will be subject to the Chaos Space Marine special rules. If the ship contains the Warmaster or a Lord then you can assume that he is also a Chaos Space Marine.
-
-Leadership:
-A vessel with a Chaos Space Marine crew will have +1 Leadership (in addition to any other bonuses due to there being a Chaos Warmaster or Chaos Lord on board). Furthermore the maximum Leadership of the vessel is increased to 10.
-
-Boarding &amp; Hit-&amp;-run:
-The superior fighting skills of the Chaos Space Marines are most apparent in boarding actions. A ship with a Chaos Space Marine crew adds two to its roll when performing boarding actions and enemy conducting hit &amp; run attacks against them subtract one from their hit &amp; run result. Hit and run attacks launched by boarding torpedoes, Dreadclaws, Thunderhawks or teleportation originating from such a ship add 1 to their result.
-
-Planetary Assault:
-Ships with Chaos Space Marine crews in a Planetary Assault mission score two Assault Points for every turn they spend landing troops.</description>
-                    </rule>
-                  </rules>
-                  <selectionEntries>
-                    <selectionEntry id="1946-d5c7-53f4-46ab" name="Terminators" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa20-7409-4136-f8a1" type="max"/>
-                      </constraints>
-                      <rules>
-                        <rule id="549c-c051-6d1d-d125" name="Terminators" hidden="false">
-                          <description>For an extra 10 points battleships and grand cruisers with Chaos Space Marine Warmasters, Lords or crews may roll two dice when conducting hit and run teleport attacks and select which one they wish to count. They will add one as normal. This represents them unleashing their Chosen Terminators in a teleport assault.</description>
-                        </rule>
-                      </rules>
-                      <costs>
-                        <cost name="pts" typeId="points" value="10"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="pts" typeId="points" value="35"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b010-f92f-e3ae-2736" name="Mark" hidden="false" collective="false" import="true" defaultSelectionEntryId="928b-9436-dd75-cee2">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfe9-5a8f-2f68-b64d" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94a1-4282-b2ab-38fe" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="928b-9436-dd75-cee2" name="Mark of Slaanesh" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <rules>
-                <rule id="c25f-a7f9-159b-3272" name="Mark of Slaanesh" hidden="false">
-                  <description>The ship is full of the sensation-craving followers of Slaanesh and their siren cries extend into the minds of the crews of nearby enemy ships. Enemy ships within 15cm suffer –2 to their Leadership value.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="00b3-1577-7389-866f" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="1176-6671-54dc-8022" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="535"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="153b-7542-43cf-815b" name="Light Bringer" publicationId="c725-9c27-cf26-b44b" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="a160-11c0-c841-424f" name="Light Bringer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">4</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="840f-c231-9459-9845" name="Light Bringer Port Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0ae2-408d-4f1b-8a74" name="Light Bringer Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6fef-fcc9-df7e-4742" name="Light Bringer Dorsal Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">All Around</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d25c-fa76-9ebe-b864" name="Captain Tetzel" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">8</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">0</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323">Fanatic Magizine 62 (need opponent permission)</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3329-8356-f3f0-8cce" name="Light Bringer Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6 Squadrons</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="98e1-46ab-1141-9780" name="Rivalry on Board" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">At the start of each Chaos turn, the player controlling the Light Bringer must roll a D6. On the roll of a 1, the Captain loses control of his bridge-crew for that turn only with the following effects
-• The ship drifts forward at half its speed and may not turn
-• No special orders may be given
-• The ship may still fire its weapons and launch ordnance
-• The ship cannot become a ‘spectral ship’, materialise from the warp or disengage back into the warp</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f818-176c-bdfe-060d" name="Ready for the fight" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">The Light Bringer automatically passes all ‘Reload Ordnance’ tests.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="d460-06f6-03ba-dad7" name="May not use the &quot;come to new heading&quot; special order" hidden="false" targetId="b1a1-aead-ea5a-d8d3" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="985c-5188-6d0e-9813" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="d145-2cae-6c97-c49d" name="Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b24-0079-5a09-8f64">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aec3-b6bf-ce2b-e2f3" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40d9-4563-06e7-bdb8" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="3b24-0079-5a09-8f64" name="Daemon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7203-66cd-a443-0a5a" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="44d8-629d-07c9-b92e" name="Daemon" hidden="false">
-                  <description>See Deamonships Special Rules.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="50"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="a068-dff1-0d4b-e5de" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="eb3b-e68d-0905-ca4d" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="300"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8777-e3f4-56a0-843b" name="Heretic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0de-9ba5-12c6-8a32" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="bb40-3c21-e288-0e65" name="Heretic Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5ccc-6df0-05c2-42d0" name="Heretic Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2f87-80a8-4408-b586" name="Heretic Starboard WeaponsBattery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e090-9872-1d61-ec7e" name="Heretic Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="722b-12cd-32cc-7422" name="Improved Thrusters" hidden="false" targetId="c019-2bd2-8f0d-3703" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="0daf-72b5-1a2e-ab52" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-        <categoryLink id="f87c-b8a0-4fbe-3877" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="e462-6a97-25fc-d5a2" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="d5da-0eb8-3503-7336" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="130"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9f9b-6b63-1764-d253" name="Governor Class Grand Cruiser" publicationId="c8aa-777a-ddc3-1c0a" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="dc3d-f468-10c9-1719" name="Governor Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Grand Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">10</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">20cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="20df-430e-ce9f-3122" name="Governor Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8ef9-698f-2392-fd3a" name="Governor Dorsal Weapons Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="31aa-0853-d73c-3167" name="Governor Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7c12-dc4a-0caf-5956" name="Governor Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30ccm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="65b6-e7a0-7b9d-9e18" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="1a0e-c40a-ac1b-4415" name="Grand Cruiser" hidden="false" targetId="46e2-c9eb-27e7-172a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="1b63-8e73-a617-9efe" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="7c33-bf46-89f5-8896" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="250"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2b19-657c-b771-79cc" name="Blasphemer Class Fast Battleship" publicationId="d256-2988-72a8-df2f" page="10" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="a536-2d07-95e9-44eb" name="Blasphemer Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">8</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">4</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="95fe-dfdb-575d-880c" name="Blasphemer 1st Port Weapon Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ea35-45fc-a774-bebc" name="Blasphemer 1st Starboard Weapon Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ec1e-db47-9942-22b1" name="Blasphemer Prow Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="addc-db69-09a3-f1d1" name="Blasphemer 2nd Starboard Weapon Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5466-5f21-84c1-c8c0" name="Blasphemer 2nd Port Weapon Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="05b3-c633-61a1-6a37" name="Extra Plasma Reactors" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Thanks to a great thrust-to-mass ratio they Blasphemer class fast battleship MAY Come to New Heading. Unfortunately, the ship is virtually filled with plasma reactors, which makes it very vulnerable to incoming fire - the ship rolls 2D6 dice for critical damage for each hit. This means that one hit may cause 2 critical hits. In addition the Blasphemer adds +2 to the catastrophic damage table and explodes like a ship with 12 hits.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="6fee-1184-4903-1ce0" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true" name="Battleship"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="952c-5c31-dc90-e095" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="6c1b-3d4d-6036-caa1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="290"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="875c-e519-7f30-a257" name="Pagan Class System Control Cruiser" publicationId="d256-2988-72a8-df2f" page="11" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="6bc2-59f9-6857-2211" name="Pagan Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="98ec-abf5-c720-a455" name="Pagan Port Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="baf4-7f1f-04d7-4e02" name="Pagan Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5c30-06de-b869-cfee" name="Pagan Starboard Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Swiftdeaths: 30cm Doomfires: 20cm Dreadclaws: 30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1 Squadron</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="be3d-13f1-f74d-0231" name="Sensor Arrays" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
-          <characteristics>
-            <characteristic name="Effects" typeId="fe13-6bab-c5cb-4f1d">Pagan class cruiser adds +1 to its Ld value thanks to sensor arrays. Note that the Pagan rolls 4d6 an AAF special order as normal.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="aa6d-0a3f-24f6-b70b" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-        <categoryLink id="1e63-f5ee-50de-1da9" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="e294-8d8b-6d04-f0a9" name="Chaos Ordnance" hidden="false" collective="false" import="true" targetId="2d3e-6486-b943-7e81" type="selectionEntryGroup"/>
-        <entryLink id="6316-ccbf-5dbd-8d6f" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="b16e-e905-8b88-1d1e" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="135"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9291-b73c-3db1-eb5c" name="Unbeliever Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="12" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="893b-1ed4-fa75-9152" name="Unbeliever Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">25cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f28c-8e21-a97d-37ad" name="Unbeliever Prow Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="24f2-48c6-3e61-5f65" name="Unbeliever Starboard Weapon Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7801-05f0-fb94-7e76" name="Unbeliever Port Weapon Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="4cbb-e142-e0b6-7555" name="Improved Thrusters" hidden="false" targetId="c019-2bd2-8f0d-3703" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="edb6-aad2-274c-e2f4" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-        <categoryLink id="f3b0-b084-e3d0-b18d" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="9b93-dd64-4fb4-c158" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="a370-22b3-ecbf-f4a6" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="120"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3ce7-6cb7-bce5-beeb" name="Schismatic Class Light Cruiser" publicationId="d256-2988-72a8-df2f" page="13" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c15-5576-ddc2-1838" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="9325-293b-86c4-fe6e" name="Schismatic Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Type" typeId="5.479706523232345e+27">Cruiser</characteristic>
-            <characteristic name="Hits" typeId="4.869747323232344e+27">6</characteristic>
-            <characteristic name="Speed" typeId="5.370656564232324e+29">30cm</characteristic>
-            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-            <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="be96-6bdf-6267-194b" name="Schismatic Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6962-0d89-da0a-8305" name="Schismatic Starboard Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Right</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0bd2-653e-7a7c-e3fd" name="Schismatic Port Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
-          <characteristics>
-            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-            <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e640-e1b0-5484-3826" name="Improved Thrusters" hidden="false" targetId="c019-2bd2-8f0d-3703" type="profile"/>
-        <infoLink id="cd6a-60a0-2630-c719" name="Torpedoes" hidden="false" targetId="8103-25d2-5412-2542" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="dd6e-631f-5223-32e6" name="Cruiser" hidden="false" targetId="1042-e458-4e02-a537" primary="true"/>
-        <categoryLink id="5b52-1e95-bc84-b3a7" name="CV" hidden="false" targetId="e0c6-bde4-7055-1e6e" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="2d5e-7659-669b-2ffe" name="Chaos Capital Ship Options" hidden="false" collective="false" import="true" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
-        <entryLink id="f16a-6393-d6bf-faf1" name="Leadership" hidden="false" collective="false" import="true" targetId="72b9-2803-264f-57f0" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="130"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b9f7-486e-3db4-e6fe" name="Chaos Fleet Master" publicationId="1bc8-5968-21c3-0f27" page="46" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8199-699f-30c5-f454" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="42a8-8aa2-9555-ef8f" name="Chaos Fleet Master" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-          <modifiers>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fa3-a3eb-eacb-721f" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="52652d726f6c6c7323232344415441232323" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c1e-a2f8-07f6-0ebd" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">+2 (max of 9)</characteristic>
-            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
-            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="4b56-fca2-e076-1287" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true" name="Fleet Commander"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6c1e-a2f8-07f6-0ebd" name="Extra re-roll" page="0" hidden="false" collective="false" import="true" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9b9-8fbb-c215-bcf7" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="25"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="75c6-cc2a-764a-b642" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="100"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="f97d-9369-c161-4470" name="Veil of Lust" publicationId="5766-7751-d146-0800" page="123" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -3268,8 +1927,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3292,9 +1949,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3320,9 +1975,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3348,9 +2001,7 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3371,8 +2022,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
           </conditions>
         </modifier>
@@ -3394,8 +2043,6 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3437,10 +2084,8 @@ Ships with Chaos Space Marine crews in a Planetary Assault mission score two Ass
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24bb-7f39-b3b7-31af" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87a9-5ec1-095c-94db" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
@@ -3506,8 +2151,6 @@ Chaos Warmasters get one re-roll. In addition they may be given a single Mark of
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3838,25 +2481,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <entryLinks>
         <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="9fcf-7b88-5ca3-ff0f" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2e5b-4744-eb33-19d2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="pts" typeId="points" value="190"/>
       </costs>
@@ -3871,11 +2495,8 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -3888,7 +2509,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="410"/>
       </costs>
       <profiles>
-        <profile name="Chaos Battle Barge Proile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0bb7-1a4d-0178-2cab">
+        <profile name="Chaos Battle Barge Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0bb7-1a4d-0178-2cab">
           <characteristics>
             <characteristic name="Type" typeId="5.479706523232345e+27">Battleship</characteristic>
             <characteristic name="Hits" typeId="4.869747323232344e+27">12</characteristic>
@@ -3952,30 +2573,14 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <categoryLinks>
         <categoryLink targetId="4361706974616c20536869707323232344415441232323" id="4857-58dd-6f9d-b565" primary="true" name="Battleship"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="9ccb-6743-2f46-8444" type="selectionEntryGroup" targetId="01b5-5904-9e02-fb87"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Desolator Class Battleship" hidden="false" id="b456-9411-c20a-3060">
       <entryLinks>
         <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="97bb-ef29-aa99-db91" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2e5b-4744-eb33-19d2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Prow Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="0e79-453a-b1d8-a813">
           <characteristics>
@@ -4127,25 +2732,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           </characteristics>
         </profile>
       </profiles>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2e5b-4744-eb33-19d2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4361706974616c20536869707323232344415441232323" id="d6d0-57e3-954a-0aa9" primary="true" name="Battleship"/>
       </categoryLinks>
@@ -4198,25 +2784,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2e5b-4744-eb33-19d2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="pts" typeId="points" value="230"/>
       </costs>
@@ -4295,10 +2862,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -4360,25 +2924,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <entryLinks>
         <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="a576-26a7-21a2-612e" collective="false" targetId="01b5-5904-9e02-fb87" type="selectionEntryGroup"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2e5b-4744-eb33-19d2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Hades Class Heavy Cruiser profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="005d-045f-a3a4-173c">
           <characteristics>
@@ -4501,25 +3046,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
           </characteristics>
         </profile>
       </profiles>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="46e2-c9eb-27e7-172a" id="fd0e-7dab-4d6c-b9e7" primary="true" name="Grand Cruiser"/>
       </categoryLinks>
@@ -4528,25 +3054,6 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <costs>
         <cost name="pts" typeId="points" value="260"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2e5b-4744-eb33-19d2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="43dd-64be-df08-1c4e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="ec1b-17c7-71cd-970c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Styx Class Heavy Cruiser profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4565-f22b-bbdc-9282">
           <characteristics>
@@ -4595,6 +3102,11 @@ Dreadclaws: 30 cm</characteristic>
       <categoryLinks>
         <categoryLink targetId="cf79-82ee-ebe9-7ea3" id="3c6d-f2aa-ad40-a970" primary="true" name="Heavy Cruiser"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leadership" hidden="false" id="96a6-14a1-742e-3164" type="selectionEntryGroup" targetId="72b9-2803-264f-57f0"/>
+        <entryLink import="true" name="Chaos Capital Ship Options" hidden="false" id="86d1-2f1e-bd28-8243" type="selectionEntryGroup" targetId="01b5-5904-9e02-fb87"/>
+        <entryLink import="true" name="Chaos Ordnance" hidden="false" id="5afa-4374-ff2b-297c" type="selectionEntryGroup" targetId="2d3e-6486-b943-7e81"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -4604,9 +3116,6 @@ Dreadclaws: 30 cm</characteristic>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7529-da04-0225-31de" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1b-17c7-71cd-970c" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43dd-64be-df08-1c4e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18e1-a7a8-7100-c178" type="instanceOf"/>
