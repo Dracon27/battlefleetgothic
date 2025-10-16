@@ -3261,11 +3261,7 @@ Any Daemon ship may have a single Mark of Chaos with the same effects and cost i
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="c35f-b5b6-8bc6-2bd7" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d7-0408-a5b9-ffad" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="c35f-b5b6-8bc6-2bd7" name="Mark" hidden="false" collective="false" import="true" targetId="82ec-1ae8-d1e4-4f75" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="82ec-1ae8-d1e4-4f75" name="Mark" hidden="false" collective="false" import="true">
@@ -3300,14 +3296,6 @@ Any Daemon ship may have a single Mark of Chaos with the same effects and cost i
         <selectionEntry id="bd2b-fcf0-cba4-d9d8" name="Mark of Slaanesh" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="bb1d-47e4-5933-04e4" name="Mark of Slaanesh" hidden="false" targetId="850f-870b-e482-4ed3" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="25"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4980-f35d-aed5-0594" name="Mark of Chaos Undivided" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="e654-9e19-05a7-57f5" name="Mark of Chaos Undivided" hidden="false" targetId="c466-daa1-aff6-1f6f" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="25"/>
