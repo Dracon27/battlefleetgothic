@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8a29-b76a-3224-f790" name="Armada Imperialis" revision="4" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8a29-b76a-3224-f790" name="Armada Imperialis" revision="4" battleScribeVersion="2.03" authorName="BSData" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="de5d6c5f-ae7b-4dd1-841e-5f1193fb5176" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" hidden="true">
   <publications>
     <publication id="44fa-5ffb-b627-7106" name="Heresy Fleet List 3rd Ed."/>
     <publication id="e9f6-9ba9-b761-dfe3" name="BFG Rulebook"/>
   </publications>
   <forceEntries>
-    <forceEntry id="bba4-1a71-5d34-8acc" name="Heresy Era Fleet" publicationId="44fa-5ffb-b627-7106" hidden="false">
+    <forceEntry id="bba4-1a71-5d34-8acc" name="Heresy Era Fleet" publicationId="44fa-5ffb-b627-7106" hidden="true">
       <categoryLinks>
         <categoryLink id="e51c-9696-ff49-6e59" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
           <modifiers>

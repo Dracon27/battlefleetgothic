@@ -418,14 +418,20 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="758a-f009-f45e-9871" shared="true"/>
                 <condition type="greaterThan" value="749" field="points" scope="force" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="2467-8965-3a88-626e" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="0" field="886b-ab43-4740-5954">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="758a-f009-f45e-9871" shared="true"/>
-          </conditions>
+        <modifier type="set" value="0" field="50d6-74be-5f84-b43d">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="758a-f009-f45e-9871" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="2467-8965-3a88-626e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -521,7 +527,7 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
                 <cost name="pts" typeId="points" value="100"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Master of the Fleet" hidden="true" id="0fff-de9d-bc9c-5f2f" page="0" collective="false">
+            <selectionEntry type="unit" import="true" name="Master of the Fleet Ldr 10" hidden="true" id="0fff-de9d-bc9c-5f2f" page="0" collective="false">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -598,9 +604,9 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="3 Extra Re-Rolls" hidden="false" id="3b86-8b3f-9839-a009" page="0" collective="false">
               <modifiers>
-                <modifier type="decrement" value="75" field="points">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="parent" childId="0fff-de9d-bc9c-5f2f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="b721-9c6e-7671-2544" childId="0fff-de9d-bc9c-5f2f" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -621,7 +627,7 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Extra Re-Rolls" hidden="false" id="3306-d205-6a51-6546" page="0" collective="false">
               <modifiers>
-                <modifier type="decrement" value="25" field="points">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="instanceOf" value="0" field="selections" scope="parent" childId="0fff-de9d-bc9c-5f2f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -1108,6 +1114,104 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
       <costs>
         <cost name="pts" typeId="points" value="50"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Master of the Fleet" hidden="true" id="2467-8965-3a88-626e" page="0" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="0ef3-f332-7984-8827">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="466c65657420436f6d6d616e6465727323232344415441232323" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="466c65657420436f6d6d616e6465727323232344415441232323" childId="2467-8965-3a88-626e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="902b-04d6-8d97-407e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ef3-f332-7984-8827"/>
+      </constraints>
+      <profiles>
+        <profile name="Fleet Commander" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="ea3b-4f53-b18e-561e" publicationId="11f0-17d1-e4d2-1018" page="115">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">8</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">1</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="52652d726f6c6c7323232344415441232323">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2467-8965-3a88-626e" childId="b0c0-1ef3-ab0b-13b0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="52652d726f6c6c7323232344415441232323">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2467-8965-3a88-626e" childId="760e-4c45-0021-4754" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="52652d726f6c6c7323232344415441232323">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2467-8965-3a88-626e" childId="ad92-3cea-3951-50bc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="52652d726f6c6c7323232344415441232323"/>
+          </modifiers>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Fleet Commander" hidden="false" id="f825-6ee9-8a16-68b4" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Extra Re-Rolls" id="3eb0-6cca-16e2-a267" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c9d1-2ee6-e5d7-06f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 Extra Re-Rolls" hidden="false" id="ad92-3cea-3951-50bc" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="500f-9f70-77ff-25da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="75"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="1 Extra Re-Roll" hidden="false" id="b0c0-1ef3-ab0b-13b0" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="246e-c3bc-062d-6f76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 Extra Re-Rolls" hidden="false" id="760e-4c45-0021-4754" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0331-17e0-c07d-a0ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+      </costs>
+      <rules>
+        <rule name="Lord Zaccarius Rath Ldr 10" id="ea39-9dde-d50d-8fb4" hidden="false" publicationId="5766-7751-d146-0800" page="36">
+          <description>Lord Admiral Rath is Ld-10 and comes with two rerolls as part of his point cost. His crew is honored and inspired by the great man‟s presence and will fight with great courage and pride; they add +1 to their roll when defending against boarding actions. Respect for him extends to the forge world of Bakka itself, and his flagship receives one ship refit and weapon refit (rolled randomly) as part of his point cost. In a campaign, a ship so refitted must remain his flagship unless it is destroyed.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
