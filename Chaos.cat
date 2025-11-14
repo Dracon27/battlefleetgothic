@@ -166,7 +166,7 @@ Chaos Warmaster must take the mark of khorne. And Chaos Lords may only take the 
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="18e1-a7a8-7100-c178" name="Pleasure Fleet of Slanesh" publicationId="5766-7751-d146-0800" page="121" hidden="false">
+    <forceEntry id="18e1-a7a8-7100-c178" name="Pleasure Fleet of Slaanesh" publicationId="5766-7751-d146-0800" page="121" hidden="false">
       <profiles>
         <profile id="d409-1f3c-bdcf-ab53" name="Pleasure Fleet of Slaanesh" hidden="false" typeId="5a49-6569-78e9-a35c" typeName="Special Rule">
           <characteristics>
@@ -386,19 +386,7 @@ Should this dreadful failure occur on Abaddon’s own ship, it will lose one Dam
         <cost name="pts" typeId="points" value="195"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c1397bd4-334e-4868-9b7a-8d478c8a120d" name="Carnage Class Cruiser" page="0" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b6ad-ef41-9fd4-07d3" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5b-4744-eb33-19d2" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="c1397bd4-334e-4868-9b7a-8d478c8a120d" name="Carnage Class Cruiser" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="ddf3-4842-5916-0acb" name="Carnage Profile" publicationId="11f0-17d1-e4d2-1018" page="124" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -1803,18 +1791,7 @@ Planetery Assault: Ships with Chaos Space Marine crews in a Planetary Assault mi
         <cost name="pts" typeId="points" value="750"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b645-d948-36b2-f501" name="Chaos Space Hulk" publicationId="5766-7751-d146-0800" page="118" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20b9-130a-82d9-6696" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="b645-d948-36b2-f501" name="Chaos Space Hulk" publicationId="5766-7751-d146-0800" page="118" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ce3-05ae-087b-fc0f" type="max"/>
       </constraints>
@@ -2440,7 +2417,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <cost name="pts" typeId="points" value="380"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Acheron Class Heavy Cruiser" hidden="true" id="71c5-635e-3b8d-4466">
+    <selectionEntry type="upgrade" import="true" name="Acheron Class Heavy Cruiser" hidden="false" id="71c5-635e-3b8d-4466">
       <profiles>
         <profile name="Acheron Class Heavy Cruiser profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="b500-d664-d0d9-c0d8">
           <characteristics>
@@ -2841,7 +2818,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Executor Class Grand Cruiser" hidden="false" id="729e-db94-3a9e-3d9b">
+    <selectionEntry type="upgrade" import="true" name="Executor Class Grand Cruiser" hidden="true" id="729e-db94-3a9e-3d9b">
       <costs>
         <cost name="pts" typeId="points" value="210"/>
       </costs>
@@ -2962,7 +2939,7 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
         <categoryLink targetId="1042-e458-4e02-a537" id="c2a8-a6ca-ae0e-ab59" primary="false" name="Cruiser"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Retaliator Class Grand Cruiser" hidden="false" id="7581-51de-2d96-5f48">
+    <selectionEntry type="upgrade" import="true" name="Retaliator Class Grand Cruiser" hidden="true" id="7581-51de-2d96-5f48">
       <costs>
         <cost name="pts" typeId="points" value="260"/>
       </costs>
@@ -3041,6 +3018,21 @@ When a Thunderhawk marker moves into contact with an enemy ship’s base, they a
       <categoryLinks>
         <categoryLink targetId="46e2-c9eb-27e7-172a" id="fd0e-7dab-4d6c-b9e7" primary="true" name="Grand Cruiser"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b6ad-ef41-9fd4-07d3" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="24bb-7f39-b3b7-31af" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="87a9-5ec1-095c-94db" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="20b9-130a-82d9-6696" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="18e1-a7a8-7100-c178" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Styx Class Heavy Cruiser" hidden="false" id="8575-a9f4-8b1b-0265">
       <costs>
