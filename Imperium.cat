@@ -746,345 +746,6 @@ The Jovian is a unique vessel. Only one may be included in an Imperial fleet. It
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Space Marine Escort Squadron" hidden="true" id="3120-ad36-c863-f9a4">
-      <entryLinks>
-        <entryLink import="true" name="Leadership" hidden="false" id="ebf4-93a5-c76c-a6d1" type="selectionEntryGroup" targetId="72b9-2803-264f-57f0"/>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Escorts" id="0ab5-cf72-fffc-9a00" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Cobra Destroyer" hidden="false" id="e783-5abe-e5a9-88ec" collective="false" targetId="fd70-2a36-263f-1ab7" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="35" field="points">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Rapid Strike Cobra Destroyer" field="name">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <infoLinks>
-                <infoLink name="Rapid Strike Vessels" id="c5df-6b69-980f-c3d9" hidden="true" targetId="3c73-8a2f-5cbd-932b" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Widowmaker Cobra" hidden="false" id="7b63-bd55-7c2c-c044" collective="false" targetId="dc88-f7ed-8352-4f11" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cd1-e8dd-1d21-e91b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Falchion Frigate" hidden="false" id="c6cb-b63f-4803-985e" collective="false" targetId="2466-9136-a2e0-ee08" type="selectionEntry"/>
-            <entryLink import="true" name="Firestorm Frigate" hidden="false" id="09ac-dc1d-b1d0-ad73" collective="false" targetId="eb31-03ad-c769-4fe6" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="Rapid Strike Firestorm Frigate" field="name">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="45" field="points">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <infoLinks>
-                <infoLink name="Rapid Strike Vessels" id="ccee-49e6-3c96-9b99" hidden="false" targetId="3c73-8a2f-5cbd-932b" type="rule"/>
-              </infoLinks>
-            </entryLink>
-            <entryLink import="true" name="Sword Frigate" hidden="false" id="0dec-7620-6f75-5064" collective="false" targetId="61f6-1b5d-3cd7-fb30" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="Rapid Strike SwordFrigate" field="name">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="40" field="points">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <rules>
-                <rule name="Rapid Strike Vessels" id="80d0-004a-322c-120b" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>Space Marine Vessels may not be squadroned with Non-Space Marine Vessels. Rapid Strike Vessels count as Space Marine Vessels and have the associated benifets.</description>
-                </rule>
-              </rules>
-            </entryLink>
-            <entryLink import="true" name="Viper Class Destroyer" hidden="false" id="4b3c-0de8-22ad-f5a5" collective="false" targetId="be17-9b09-4b35-2f65" type="selectionEntry"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="unit" import="true" name="Gladius Frigate" hidden="true" id="b343-92e2-4727-a252" publicationId="1bc8-5968-21c3-0f27" page="25" collective="false">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="d5db-67cd-dd90-c183" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Gladius Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a441-55a7-3a88-6339" publicationId="1bc8-5968-21c3-0f27" page="25">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">30cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Gladius Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="61ba-7e1e-d92e-d0bb">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Escort" hidden="false" id="a78e-067b-86f8-7153" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="45"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Havoc Class Frigate" hidden="true" id="eef5-7a13-798f-3214" publicationId="5766-7751-d146-0800" page="43" collective="false">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="03e7-6be8-18fa-d7e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Havoc Class Frigate" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="db96-04fe-0a49-733e" publicationId="5766-7751-d146-0800" page="43">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">25</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Dorsal Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="0633-d0c6-68bf-fa54">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="cbcd-e54b-ad8d-cffb">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Escort" hidden="false" id="7d16-a42b-7854-32db" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="35"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Hunter Destroyer" hidden="true" id="3518-9d1c-9626-4bcf" publicationId="1bc8-5968-21c3-0f27" page="24" collective="false">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="6418-9337-9995-8456" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Hunter Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="9adf-b136-9c25-1877" publicationId="1bc8-5968-21c3-0f27" page="24">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">35cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Hunter Torpedoes" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="049a-d0ea-e88d-6e8e">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Hunter Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="068d-98f2-607b-f9d1">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Escort" hidden="false" id="1def-db84-909d-9814" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="40"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Nova Frigate" hidden="true" id="b303-8927-155b-94d8" publicationId="1bc8-5968-21c3-0f27" page="25" collective="false">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="fa29-c8c0-37f0-ba3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Nova Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="7812-5c58-2fad-f99f" publicationId="1bc8-5968-21c3-0f27" page="25">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Escort</characteristic>
-                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">35cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Nova Lance" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="9b4d-cf9d-4d97-9263">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Nova Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="4191-5ff1-a397-4459">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Escort" hidden="false" id="58b5-6d6f-a39a-2fcc" targetId="4573636f72747323232344415441232323" primary="true"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="50"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="System Ship" hidden="true" id="d279-5710-773c-c02e" collective="false">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ffa4-b254-7479-0319" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="System Ship Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="ca9e-b0ff-d94c-eb53">
-                  <characteristics>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Defence</characteristic>
-                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">15cm</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
-                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
-                    <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="System Ship Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="bb3e-9ce6-6a46-fc87">
-                  <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
-                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
-                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/Front/Right</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Escort" hidden="false" id="baa6-155b-33ce-5d78" targetId="4573636f72747323232344415441232323" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="20"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="eb20-bda8-1a8b-20db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="1f36-0229-1e19-1de1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="4573636f72747323232344415441232323" id="a26a-cb3c-2695-d4d9" primary="true" name="Escort"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Veteran Captain" hidden="true" id="f990-8916-3a92-c5bc" collective="false">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -1237,9 +898,9 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="6018-55bf-7466-ed8a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="a2b7-61cb-e479-de43" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1253,8 +914,8 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                   <characteristics>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Escort/1</characteristic>
                     <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">30</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">30 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
@@ -1262,14 +923,14 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 </profile>
                 <profile name="Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="bfbf-ff21-9e37-a342">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Prow Torpedos" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="406d-fbe4-da4b-95de">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
                   </characteristics>
@@ -1279,7 +940,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 <categoryLink name="Escort" hidden="false" id="0a34-1e03-1a95-40f5" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
+                <cost name="pts" typeId="points" value="30"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Falchion Rapid Strike Vessel" hidden="true" id="f5c7-aea0-51d4-702a" page="0" collective="false">
@@ -1288,8 +949,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="6018-55bf-7466-ed8a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1338,9 +998,9 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="6018-55bf-7466-ed8a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="a2b7-61cb-e479-de43" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ed8-4a6a-2f2b-833d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1383,7 +1043,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 <cost name="pts" typeId="points" value="45"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Gladius Frigate" hidden="false" id="c300-5643-bb60-eb85" page="0" collective="false">
+            <selectionEntry type="unit" import="true" name="Gladius Frigate" hidden="true" id="c300-5643-bb60-eb85" page="0" collective="false">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="ef58-8050-127b-c0ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1413,8 +1073,15 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
               <costs>
                 <cost name="pts" typeId="points" value="45"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Hunter Destroyer" hidden="false" id="e75e-8ce8-d9b2-057d" page="0" collective="false">
+            <selectionEntry type="unit" import="true" name="Hunter Destroyer" hidden="true" id="e75e-8ce8-d9b2-057d" page="0" collective="false">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="67dd-5b74-814e-9b56" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1451,8 +1118,15 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
               <costs>
                 <cost name="pts" typeId="points" value="40"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Nova Frigate" hidden="false" id="825e-f5e8-afbc-605f" page="0" collective="false">
+            <selectionEntry type="unit" import="true" name="Nova Frigate" hidden="true" id="825e-f5e8-afbc-605f" page="0" collective="false">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="ca3e-b7e8-7b2c-d9ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1489,6 +1163,13 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
               <costs>
                 <cost name="pts" typeId="points" value="50"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Sword Rapid Strike Vessel" hidden="true" id="64df-2bca-cbb9-db69" page="0" collective="false">
               <modifiers>
@@ -1496,9 +1177,10 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="6018-55bf-7466-ed8a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7529-da04-0225-31de" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="a2b7-61cb-e479-de43" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="7004-e1c8-a2b1-6fce" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="c52d-5b11-b7cd-f654" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="24a3-f4ab-d475-1a63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1512,8 +1194,8 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                   <characteristics>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Escort/1</characteristic>
                     <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
-                    <characteristic name="Speed" typeId="5.370656564232324e+29">25</characteristic>
-                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">25 cm </characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
                     <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
                     <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
                     <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
@@ -1521,7 +1203,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 </profile>
                 <profile name="Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="fe36-c298-2973-4d89">
                   <characteristics>
-                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
                     <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
                     <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/right/front</characteristic>
                   </characteristics>
@@ -1532,6 +1214,97 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Havoc Class Frigate" hidden="true" id="6dbc-826a-1741-f9c6" page="0" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="7279-6aa8-c1f6-ca9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Havoc Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="8965-edc9-2cfd-ab38" publicationId="11f0-17d1-e4d2-1018" page="114">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Escort/1</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">25 cm</characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Prow Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="de4f-0f10-9677-8890">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dorsal Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="28f2-be6b-9f19-822b">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Left/front/right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Escort" hidden="false" id="89d9-e196-75fe-b027" targetId="4573636f72747323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Viper Class Destroyer" hidden="true" id="5cef-319b-8fdb-c1b4" page="0" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="force" childId="e874-e62b-1c36-7aec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="false" id="ac88-ffe7-21f5-0902" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Viper Profile" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="f34a-21f5-7ed6-53e8" publicationId="11f0-17d1-e4d2-1018" page="113">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Escort/1</characteristic>
+                    <characteristic name="Hits" typeId="4.869747323232344e+27">1</characteristic>
+                    <characteristic name="Speed" typeId="5.370656564232324e+29">30 cm </characteristic>
+                    <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+                    <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+                    <characteristic name="Turrets" typeId="5.475727265747323e+33">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Weapons Battery" typeId="41726d616d656e7423232344415441232323" typeName="Armament" hidden="false" id="e7d5-d7f6-b8aa-cbea">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30 cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+                    <characteristic name="Fire Arc" typeId="4.669726520417263e+35">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Escort" hidden="false" id="a5e9-0a23-8aad-5d49" targetId="4573636f72747323232344415441232323" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
