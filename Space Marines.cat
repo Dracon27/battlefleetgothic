@@ -527,6 +527,13 @@ When a Thunderhawk Annihilator comes in contact with an enemy ship’s base, the
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="0449-d13b-c6c2-75ad">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a8ee-ec79-72ed-2dc1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
