@@ -1040,7 +1040,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 <categoryLink name="Escort" hidden="false" id="245d-8fb2-6f24-6229" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="45"/>
+                <cost name="pts" typeId="points" value="40"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Gladius Frigate" hidden="true" id="c300-5643-bb60-eb85" page="0" collective="false">
@@ -1213,7 +1213,7 @@ A Veteran Captain gets one re-roll which is included in their points cost and ca
                 <categoryLink name="Escort" hidden="false" id="5f01-4eb1-dee6-8150" targetId="4573636f72747323232344415441232323" primary="true"/>
               </categoryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40"/>
+                <cost name="pts" typeId="points" value="35"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Havoc Class Frigate" hidden="true" id="6dbc-826a-1741-f9c6" page="0" collective="false">
